@@ -42,7 +42,7 @@ const todoList = () => {
       // ..
       // return OUTPUT_STRING
       return list.map(
-        (todo)=>`${todo.completed ? "[x]":"[]"} ${todo.title} ${todo.dueDate==today ? "" : todo.dueDate}`
+        (todo)=>`${todo.completed ? "[x]":"[ ]"} ${todo.title} ${todo.dueDate==today ? "" : todo.dueDate}`
       ).join("\n");
     };
 
